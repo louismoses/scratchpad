@@ -207,7 +207,6 @@ HINT: Use an if/else statement 😉
 
 GOOD LUCK 😀
 */
-
 /*
 const massMark = 78;
 const heightMark = 1.69;
@@ -224,30 +223,30 @@ const BMIJohn = massJohn / (heightJohn * heightJohn);
 console.log(BMIMark, BMIJohn);
 
 if (BMIMark > BMIJohn) {
-  console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`)
+  console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`);
 } else {
-  console.log(`John's BMI (${BMIJohn}) is higher than Marks's (${BMIMark})!`)
+  console.log(`John's BMI (${BMIJohn}) is higher than Marks's (${BMIMark})!`);
 }
 
 ////////////////////////////////////
 // Type Conversion and Coercion
 
 // type conversion
-const inputYear = '1991';
+const inputYear = "1991";
 console.log(Number(inputYear), inputYear);
 console.log(Number(inputYear) + 18);
 
-console.log(Number('Jonas'));
+console.log(Number("Jonas"));
 console.log(typeof NaN);
 
 console.log(String(23), 23);
 
 // type coercion
-console.log('I am ' + 23 + ' years old');
-console.log('23' - '10' - 3);
-console.log('23' / '2');
+console.log("I am " + 23 + " years old");
+console.log("23" - "10" - 3);
+console.log("23" / "2");
 
-let n = '1' + 1; // '11'
+let n = "1" + 1; // '11'
 n = n - 1;
 console.log(n);
 
@@ -257,46 +256,47 @@ console.log(n);
 // 5 falsy values: 0, '', undefined, null, NaN
 console.log(Boolean(0));
 console.log(Boolean(undefined));
-console.log(Boolean('Jonas'));
+console.log(Boolean("Jonas"));
 console.log(Boolean({}));
-console.log(Boolean(''));
+console.log(Boolean(""));
 
 const money = 100;
 if (money) {
   console.log("Don't spend it all ;)");
 } else {
-  console.log('You should get a job!');
+  console.log("You should get a job!");
 }
 
 let height = 0;
 if (height) {
-  console.log('YAY! Height is defined');
+  console.log("YAY! Height is defined");
 } else {
-  console.log('Height is UNDEFINED');
+  console.log("Height is UNDEFINED");
 }
 
 ////////////////////////////////////
 // Equality Operators: == vs. ===
-const age = '18';
-if (age === 18) console.log('You just became an adult :D (strict)');
+const age = "18";
+if (age === 18) console.log("You just became an adult :D (strict)");
 
-if (age == 18) console.log('You just became an adult :D (loose)');
+if (age == 18) console.log("You just became an adult :D (loose)");
 
 const favourite = Number(prompt("What's your favourite number?"));
 console.log(favourite);
 console.log(typeof favourite);
 
-if (favourite === 23) { // 22 === 23 -> FALSE
-  console.log('Cool! 23 is an amzaing number!')
+if (favourite === 23) {
+  // 22 === 23 -> FALSE
+  console.log("Cool! 23 is an amzaing number!");
 } else if (favourite === 7) {
-  console.log('7 is also a cool number')
+  console.log("7 is also a cool number");
 } else if (favourite === 9) {
-  console.log('9 is also a cool number')
+  console.log("9 is also a cool number");
 } else {
-  console.log('Number is not 23 or 7 or 9')
+  console.log("Number is not 23 or 7 or 9");
 }
 
-if (favourite !== 23) console.log('Why not 23?');
+if (favourite !== 23) console.log("Why not 23?");
 
 ////////////////////////////////////
 // Logical Operators
@@ -317,17 +317,16 @@ const isTired = false; // C
 console.log(hasDriversLicense && hasGoodVision && isTired);
 
 if (hasDriversLicense && hasGoodVision && !isTired) {
-  console.log('Sarah is able to drive!');
+  console.log("Sarah is able to drive!");
 } else {
-  console.log('Someone else should drive...');
+  console.log("Someone else should drive...");
 }
-*/
 
 ////////////////////////////////////
 // Coding Challenge #3
 
-/*
-There are two gymnastics teams, Dolphins and Koalas. They compete against each other 3 times. The winner with the highest average score wins the a trophy!
+
+// There are two gymnastics teams, Dolphins and Koalas. They compete against each other 3 times. The winner with the highest average score wins the a trophy!
 
 1. Calculate the average score for each team, using the test data below
 2. Compare the team's average scores to determine the winner of the competition, and print it to the console. Don't forget that there can be a draw, so test for that as well (draw means they have the same average score).
@@ -340,9 +339,8 @@ TEST DATA BONUS 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
 TEST DATA BONUS 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 
 GOOD LUCK 😀
-*/
 
-/*
+
 // const scoreDolphins = (96 + 108 + 89) / 3;
 // const scoreKoalas = (88 + 91 + 110) / 3;
 // console.log(scoreDolphins, scoreKoalas);
@@ -361,13 +359,17 @@ const scoreKoalas = (109 + 95 + 50) / 3;
 console.log(scoreDolphins, scoreKoalas);
 
 if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
-  console.log('Dolphins win the trophy 🏆');
+  console.log("Dolphins win the trophy 🏆");
 } else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) {
-  console.log('Koalas win the trophy 🏆');
-} else if (scoreDolphins === scoreKoalas && scoreDolphins >= 100 && scoreKoalas >= 100) {
-  console.log('Both win the trophy!');
+  console.log("Koalas win the trophy 🏆");
+} else if (
+  scoreDolphins === scoreKoalas &&
+  scoreDolphins >= 100 &&
+  scoreKoalas >= 100
+) {
+  console.log("Both win the trophy!");
 } else {
-  console.log('No one wins the trophy 😭');
+  console.log("No one wins the trophy 😭");
 }
 
 ////////////////////////////////////
@@ -460,28 +462,14 @@ HINT: Value X is between 50 and 300, if it's >= 50 && <= 300 😉
 
 GOOD LUCK 😀
 */
-
+/*
 const bill = 430;
 const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
 console.log(
   `The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`
 );
+*/
 
-// BMI Challenge
-let massMark = 95;
-let massJohn = 85;
-let heightMark = 1.88;
-let heightJohn = 1.76;
+// scratch for Challenges ++++++++++++++++++++++++++++++++++++++++++
 
-function bmiCalculator(mass, height) {
-  return mass / height ** 2;
-}
-
-let bmiMark = bmiCalculator(massMark, heightMark);
-let bmiJohn = bmiCalculator(massJohn, heightJohn);
-if (bmiMark > bmiJohn) {
-  console.log(`Mark(${bmiMark}) has higher BMI than John(${bmiJohn})`);
-} else {
-  console.log(`John(${bmiJohn}) has higher BMI than Mark(${bmiMark})`);
-}
-//Video 022 @ 08:30
+//Video 025 @ 00:00
