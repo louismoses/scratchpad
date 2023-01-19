@@ -24,7 +24,7 @@ console.log(calAge1(1991));
 const calcage3 = (birthYeah) => 2037 - birthYeah;
 console.log(calcage3(1992));
 // video 36
-*/
+
 // video 38 function coding challenge
 
 const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
@@ -48,3 +48,22 @@ checkWinner(avgDolphins, avgKoalas);
 avgDolphins = calcAverage(85, 54, 41);
 avgKoalas = calcAverage(23, 34, 27);
 checkWinner(avgDolphins, avgKoalas);
+*/
+
+// video 39 arrays
+// video 40 arrays
+// video 41 arrays coding challenge
+function calcTip(bill) {
+  if (bill < 300 && bill > 50) {
+    return bill * 0.15;
+  } else {
+    return bill * 0.2;
+  }
+}
+const bill = [125, 555, 44];
+const tip = [calcTip(125), calcTip(555), calcTip(44)];
+const total = [bill[0] + tip[0], bill[1] + tip[1], bill[2] + tip[2]];
+
+console.log(bill);
+console.log(tip);
+console.log(total);
