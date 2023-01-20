@@ -94,7 +94,7 @@ console.log(
 jonas.calcAge();
 jonas.getsummary();
 console.log(jonas.getsummary());
-*/
+
 
 // video 45 BMI challenge using objects
 
@@ -135,3 +135,16 @@ function compare() {
 }
 
 compare();
+*/
+// video 46 - for loop
+// video 47 - for loop
+// video 48 - for loop inside loop
+// video 49 - while loop
+let dice = Math.trunc(Math.random() * 6 + 1);
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) {
+    console.log(`You rolled a ${dice}`);
+  }
+}
