@@ -135,7 +135,7 @@ function compare() {
 }
 
 compare();
-*/
+
 // video 46 - for loop
 // video 47 - for loop
 // video 48 - for loop inside loop
@@ -148,3 +148,35 @@ while (dice !== 6) {
     console.log(`You rolled a ${dice}`);
   }
 }
+*/
+//video 50 bill tip challenge with arrays
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const total = [];
+
+function calcTip(bill) {
+  if (bill <= 300 && bill >= 50) {
+    return bill * 0.15;
+  } else {
+    return bill * 0.2;
+  }
+}
+for (let i = 0; i < bills.length; i++) {
+  tips.push(calcTip(bills[i]));
+  total.push(tips[i] + bills[i]);
+}
+console.log(bills);
+console.log(tips);
+console.log(total);
+
+function calcAverage(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum / arr.length;
+}
+
+console.log(calcAverage(bills));
+console.log(calcAverage(tips));
+console.log(calcAverage(total));
